@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;800&family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <div class="page">
+        <header class="header">
+            <div class="container"></div>
+        </header>
+        <main class="main">
+            <section class="section">
+                <div class="container">
+                    <button type="button" class="main__button act-open-modal">Стать партнёром проекта</button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container"></div>
+        </footer>
+    </div>
+    
+    <div class="modal__wrap">
+        <div class="modal">
+            <h2 class="modal__ttl">Стать партнёром проекта</h2>
+            <form class="modal__form form">
+                <div class="form__columns">
+                    <div class="form__column">
+                        <div class="form__field form__field--label">
+                            <label class="form__label"><span class="red">✱</span>Название организации</label>
+                            <input type="text" name="companyName" id="companyName" class="form__input" value="АВЦ" required>
+                        </div>
+                        <div class="form__field form__field--label">
+                            <label class="form__label"><span class="red">✱</span>Телефон</label>
+                            <input type="tel" name="companyName" id="companyName" class="form__input" value="+7 933 848-34-33" required>
+                        </div>
+                        <div class="form__field form__field--label">
+                            <label class="form__label"><span class="red">✱</span>E-mail</label>
+                            <input type="email" name="companyName" id="companyName" class="form__input" value="avc@gmail.com" required>
+                        </div>
+                    </div>
+                    <div class="form__logo-block logo">
+                        <p class="logo__ttl"><span class="red">✱</span> Логотип (jpeg, png)</p>
+                        <label class="logo__label" for="logo">
+                            <img src="img/logo-btn.svg" class="logo__btn-img" width="29" height="29">
+                            <span class="logo__text">Выберите файл</span>
+                            <button class="logo__delete">
+                                <img class="logo__delete-button" src="img/close.svg" width="15" height="15">
+                            </button>
+                        </label>
+                        <input type="file" class="logo__input" required name="logo" id="logo">
+                        
+                    </div>
+                </div>
+                
+                <div class="form__field form__field--label form__field--select">
+                    <label class="form__label"><span class="red">✱</span>Направление</label>
+                    <select name="form__select" class="form__select" required>
+                        <option selected value="Экология">Экология</option>
+                        <option value="Направление2">Направление2</option>
+                        <option value="Направление3">Направление3</option>
+                        <option value="Направление4">Направление4</option>
+                    </select>
+                </div>
+                <div class="form__field form__field--site">
+                    <input type="text" name="site" id="site" class="form__input" value="avc.ru">
+                </div>
+                <div class="form__field form__field--vk">
+                    <input type="text" name="vk" id="vk" class="form__input" value="vk.com/shans">
+                </div>
+                <div class="form__field form__field--ok">
+                    <input type="text" name="ok" id="ok" class="form__input" value="ok.com/shans">
+                </div>
+                <div class="form__field form__field--fb">
+                    <input type="text" name="fb" id="fb" class="form__input" value="facebook.com/shans">
+                </div>
+                <div class="form__field form__field--instagram">
+                    <input type="text" name="instagram" id="instagram" class="form__input" value="instagram.com/shans">
+                </div>
+                <div class="form__field form__field--youtube">
+                    <input type="text" name="youtube" id="youtube" class="form__input" value="youtube.com/shans">
+                </div>
+                <div class="form__field form__field--label">
+                    <label class="form__label"><span class="red">✱</span>Руководитель</label>
+                    <input type="text" name="companyName" id="companyName" class="form__input" value="Александров Иван Васильевич">
+                </div>
+
+                <button type="submit" class="form__button">Стать партнёром проекта</button>
+                <button type="button" class="form__button form__button--link act-close-modal">Отменить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
